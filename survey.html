@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<style type="text/css"></style>
+<h1 id="title">College Survey Form</h1>
+<div id="form-outer">
+  <p id="description">
+    Let us know how we can improve your classes
+  </p>
+  <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your current role?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Freshman</option>
+      <option value="job">Sophmore</option>
+      <option value="learner">Junior</option>
+      <option value="preferNo">Senior</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How likely is it that you would recommend College to a friend?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>No<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What do you like most about College: </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Class</option>
+      <option value="projects">Projects</option>
+      <option value="community">Clubs</option>
+      <option value="openSource">Networking</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Cost of Education</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Transportation</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Faculty/Staff</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Club Funding</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Textbooks</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Tutoring</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Class Scheduling</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">S.G.A.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Parking</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
